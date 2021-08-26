@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(73, 73, 73);
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.App-logo {
+  height: 20vh;
+  transition: .3s;
+  margin-bottom: 1rem;
+}
+
+.App-logo:hover {
+  height: 30vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* MAIN */
+main {
+  margin: 2rem 0;
+}
+
+main h1 {
+  font-size: 2rem;
+}
+
+.container {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(73, 73, 73);
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.boxes a {
+  width: 20rem;
+  min-height: 8.3rem;
+  border: 1px solid rgb(206, 206, 206);
+  margin: 1rem 1rem;
+  border-radius: 4px;
+  padding-left: 1rem;
+}
+
+.boxes a:hover,
+.boxes .box a:hover {
+  color: rgb(42, 112, 204);
+  border: 2px solid rgb(42, 112, 204);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media(max-width:720px) {
+  .App {
+    text-align: center;
+  }
+
+  .boxes a {
+    width: 100%;
+  }
+}
